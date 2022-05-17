@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import FeedbackForm from './components/FeedbackStats'
-import Feedbacklist from './components/Feedbacklist'
+import FeedbackForm from './components/FeedbackForm'
+import FeedbackList from './components/Feedbacklist'
 
 
 import FeedbackData from './Data/FeedbackData'
@@ -20,7 +20,7 @@ function App() {
       <Header/>
       <FeedbackForm handleAdd={addFeedback}/>
       <FeedbackStats feedback={feedback}/>
-      <Feedbacklist feedback={feedback} handleDelete={Deletefeedback}/>
+      <FeedbackList feedback={feedback} handleDelete={Deletefeedback}/>
     </div>
   
   )

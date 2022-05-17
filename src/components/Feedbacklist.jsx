@@ -4,8 +4,8 @@ function Feedbacklist({feedback,handleDelete}) {
   
   return (
     <div>
-      {feedback.map((item)=>(
-        <Feedbackitem item={item} handleDelete={handleDelete}/>
+      {feedback.map((item,index)=>(
+        <Feedbackitem item={item} handleDelete={handleDelete} key={index}/>
         ))}
     </div>
   )

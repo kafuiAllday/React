@@ -9,7 +9,6 @@ function FeedbackStats({feedback}) {
     <div className="feedback-stats">
       <h3>{feedback.length} Reviews</h3>
       <h3>Average rating : {Average}</h3>
-
     </div>
     </>
   )
